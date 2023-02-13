@@ -30,3 +30,6 @@ app.use('/files/download', require('./routes/download'))
 app.listen(PORT, () => {
     console.log(`App is listening on port ${PORT}`)
 })
+
+//required for vercel
+module.exports = app;
